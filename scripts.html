@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a36efa5cad.js" crossorigin="anonymous"></script>
+    <script src="menu.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <navbar class="navbarHead">
+        <div id="logo">
+            <a href="#home" onclick="navigateBar()">SushiON</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavBar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <div id="rightNav">
+            <a href="#about" onclick="navigateBar()">About</a>
+            <a href="#review" onclick="navigateBar()">Review</a>
+        </div>
+        <div id="leftNav">
+            <a href="#menu" onclick="navigateBar()">Menu</a>
+            <a href="#contact" onclick="navigateBar()">Contact</a>
+        </div>
+
+    </navbar>
+    <section id="home" class="home">
+        <div class="introduction">
+            <h1>SushiON</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel ipsum aliquam, mattis dolor ut, blandit
+                sem.
+                Pellentesque aliquet molestie hendrerit. Sed ultrices eu sem eget ultrices. Suspendisse at pretium
+                dolor. Nunc enim dui,
+                posuere id fermentum ut, porttitor ut tortor. Morbi convallis rhoncus mauris, et tempor quam condimentum
+                quis<span id="dots">...</span>
+                <span id="more">Suspendisse potenti. Proin felis augue, blandit eu vestibulum quis, mollis a elit.
+                    Aenean non sapien
+                    vitae nunc
+                    ultricies egestas. Nullam gravida quam nisi. Phasellus venenatis vitae leo non tincidunt. Fusce
+                    rutrum
+                    ipsum consequat
+                    justo tristique eleifend. Quisque pretium ultricies erat, quis congue tortor blandit.</span>
+                <span id="readMore" onclick="readMore()">Read more</span>
+            </p>
+
+            <a href="#menu" class="orderBtn">Order Now<a>
+
+        </div>
+
+        <div class="img">
+            <img src="./image/rmsushi.png">
+            <a id="imgbtn" href="#menu" class="orderBtn">
+                Order Now
+            </a>
+        </div>
+
+
+
+    </section>
+
+    <section id="about" class="about">
+
+        <h3>About Us</h3>
+
+        <div class="goodpoint">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa fa-utensils"></i>
+
+                </div>
+                <h4>Romantic Hangout Place</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec maximus turpis, vel varius
+                    libero. Donec egestas nibh
+                    Suspendisse quis velit
+                    ornare, pharetra dolor ac, commodo odio. Ut in sagittis purus. Suspendisse laoreet nisl.
+                </p>
+            </div>
+            <div class="card">
+
+                <div class="icon">
+                    <i class="fa fa-fish"></i>
+
+                </div>
+                <h4>Always Fresh</h4>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec maximus turpis, vel varius
+                    libero. Donec egestas nibh
+                    a lectus rhoncus, ac volutpat neque viverra. Cras eu aliquet nisi. Maecenas sit amet leo mauris.
+
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa fa-truck"></i>
+
+                </div>
+                <h4>Delivery Available</h4>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec maximus turpis, vel varius
+                    libero. Donec egestas nibh
+                    a lectus rhoncus, ac volutpat neque viverra. Cras eu aliquet nisi. Maecenas sit amet leo mauris.
+                    Suspendisse quis velit
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="review" class="review">
+        <h3>Review</h3>
+
+        <div class="carousel">
+            <div class="reviewCar fade">
+                <div class="image">
+                    <i class="fa fa-user"></i>
+                </div>
+
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus, libero at pretium
+                        placerat,
+                        ligula ipsum
+                        dignissim turpis, et auctor nunc erat vel felis. Nunc scelerisque fermentum mollis. Sed eu
+                        maximus
+                    </p>
+                    <h4>Perry Leach</h4>
+                </div>
+
+            </div>
+
+            <div class="reviewCar fade">
+                <div class="image">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="content">
+                    <p>Quisque nec venenatis tellus. Sed in ex nec metus tempor aliquam eu id orci. Etiam vel purus
+                        enim.
+                        Morbi ultrices
+                        faucibus ante, eget consectetur urna accumsan eget. In mauris libero, auctor non nisi nec,
+                    </p>
+
+                    <h4>Ursula Smart</h4>
+                </div>
+
+            </div>
+
+            <div class="reviewCar fade">
+
+                <div class="image">
+                    <i class="fa fa-user"></i>
+
+                </div>
+                <div class="content">
+                    <p>Suspendisse aliquet eros eget laoreet commodo. Class aptent taciti sociosqu ad litora torquent
+                        per
+                        conubia nostra, per
+                        inceptos himenaeos. Aenean eget nunc eleifend, porttitor erat ut, dignissim orci. Morbi posuere
+                        ante
+                        eros, in vulputate
+                    </p>
+                    <h4>Harvie Kaiser</h4>
+                </div>
+
+            </div>
+
+            <div class="carouselMenu" style="text-align:center">
+                <div class="dot" onclick="currentSlide(1)">1</div>
+                <div class="dot" onclick="currentSlide(2)">2</div>
+                <div class="dot" onclick="currentSlide(3)">3</div>
+            </div>
+    </section>
+
+    <section id="sushi">
+    </section>
+
+    <section id="menu" class="menu">
+        <h3>Menu</h3>
+        <div class="menuContent">
+            <div class="sushiMenu">
+                <table class="sushiM">
+                    <caption>Sushi Combo</caption>
+                </table>
+            </div>
+
+            <div class="sashimiMenu">
+                <table class="sashimi">
+                    <caption>Sashimi Combo</caption>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h3>Contact & Location</h3>
+
+        <div class="clocation">
+            <div class="information">
+                <p>Call: 437-111-1111 <br /> Address: @@ Dummy Street, Toronto, ON X0X 3X1</p>
+                <hr />
+
+                <img src="image/location.jpg">
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92398.34020038607!2d-79.46329591484377!3d43.63884397899912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3588e8d52067%3A0xdae2f48f57a8857b!2sMuni%20Robata!5e0!3m2!1sen!2sca!4v1652316517701!5m2!1sen!2sca"
+                    width="300" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

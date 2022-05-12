@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  background-color: #6f0000;
+  width: fit-content;
+  margin: 1em auto;
+  padding: 0 1em;
+  color: white;
+}
+
+.navbarHead {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  background-color: #8b0000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  z-index: 10;
+}
+.navbarHead #logo {
+  display: inline-block;
+}
+
+.navbarHead #rightNav {
+  display: inline-block;
+}
+
+.navbarHead #leftNav {
+  display: inline-block;
+  float: right;
+}
+
+.navbarHead div {
+  list-style: none;
+  padding: 0.5em 2em 0.5em 2em;
+}
+
+.navbarHead div a {
+  color: black;
+  margin: 0 2em 0 2em;
+  text-decoration: none;
+}
+
+.navbarHead div a:hover {
+  color: white;
+}
+
+.navbarHead .icon {
+  display: none;
+}
+
+.home {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 7em 10em 2em 10em;
+}
+
+.home .introduction {
+  color: white;
+  width: 60%;
+  max-width: 600px;
+}
+
+.home .introduction h1 {
+  margin: 0;
+  font-size: 7vw;
+  color: #7d0000;
+  font-family: "Della Respira", serif;
+}
+
+.home .introduction p,
+span {
+  font-family: "Open Sans", sans-serif;
+}
+
+.home .introduction a {
+  float: right;
+  margin-right: 3em;
+}
+
+.home .img {
+  width: 30%;
+}
+.home .img img {
+  z-index: -1;
+  height: 600px;
+  transform: rotate(30deg);
+}
+
+#imgbtn {
+  display: none;
+}
+
+#more {
+  display: none;
+}
+
+#readMore {
+  color: #7d0000;
+  font-weight: 700;
+}
+
+.orderBtn {
+  background-color: #7d0000;
+  border: 4px solid #7d0000;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0.25em;
+}
+
+.orderBtn:hover {
+  color: black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about {
+  padding: 1em 3em 3em 3em;
+}
+.about h3 {
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: underline 4px solid #6f0000;
+}
+
+.about .goodpoint {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about .goodpoint .card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 30%;
+  background-color: #6f0000;
+  padding: 2em 0.5em 2em 0.5em;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.about .goodpoint .card:hover {
+  background-color: #7d0000;
+}
+
+.about .goodpoint .card .icon {
+  margin: 0 auto;
+  padding: 2em;
+  border-radius: 50%;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+}
+.about .goodpoint .card i {
+  color: black;
+  font-size: 3em;
+}
+
+.about .goodpoint .card h4 {
+  font-size: 1.5em;
+  color: white;
+}
+
+.about .goodpoint .card p {
+  margin: 0.5em;
+  color: white;
+}
+
+.review {
+  background-color: black;
+  padding: 2em 0 3em 0;
+}
+
+.review h3 {
+  color: white;
+}
+.review .carousel {
+  max-width: 80%;
+  margin: auto;
+}
+
+.reviewCar {
+  border-radius: 1em;
+  background-color: #6f0000;
+  display: none;
+  padding: 3em;
+  height: fit-content;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.reviewCar .image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+}
+
+.review .image i {
+  font-size: 5em;
+  margin-top: 0.4em;
+}
+
+.dot {
+  color: white;
+}
+
+.dot .active {
+  color: #6f0000;
+}
+
+.reviewCar .content {
+  color: white;
+  margin-left: 3em;
+  width: 70%;
+}
+
+.reviewCar .content h4 {
+  border-top: 3px solid black;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.carouselMenu {
+  margin-top: 0.75em;
+}
+.carouselMenu div {
+  background-color: #6f0000;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#sushi {
+  width: 100%;
+  height: 3.5em;
+  background-image: url("./image/review.png");
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menuContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuContent div {
+  max-width: 700px;
+  width: 50%;
+}
+
+.menuContent table {
+  background-color: #6f0000;
+  color: white;
+  font-weight: 500;
+  padding: 2em;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 1em;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.menuContent table .des {
+  font-size: 0.75em;
+}
+
+.menuContent table caption {
+  color: black;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  text-decoration: underline 4px solid #6f0000;
+}
+
+.contact {
+  margin-top: 3em;
+  padding: 1em 0 1em 0;
+  background-color: black;
+  color: white;
+}
+
+.contact .clocation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.information {
+  width: 60%;
+  padding: 2em 5em 2em 10em;
+}
+
+.information hr {
+  background-color: #6f0000;
+  border: none;
+  width: 60%;
+  max-width: 300px;
+  height: 5px;
+  margin-left: auto;
+}
+
+.contact .map {
+  width: 40%;
+}
+.information p {
+  font-size: 2em;
+  word-wrap: break-word;
+  font-weight: 700;
+}
+
+.information img {
+  width: 500px;
+}
+
+@media (max-width: 1000px) {
+  .menuContent {
+    display: block;
+  }
+  .menuContent div {
+    display: block;
+    margin: 3em auto;
+    width: 100%;
+  }
+
+  .menuContent table {
+    margin: 3em auto;
+  }
+  .home {
+    padding: 5em 5em 2em 5em;
+  }
+  .navbarHead {
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+  }
+
+  .navbarHead .icon {
+    display: inline-block;
+    float: right;
+    font-size: 1.4em;
+    color: white;
+  }
+
+  .navbarHead #leftNav {
+    display: none;
+  }
+  .navbarHead #rightNav {
+    display: none;
+  }
+
+  .navbarHead div {
+    list-style: none;
+    padding: 0.5em 0 0 0;
+  }
+
+  #logo {
+    display: block;
+    width: 100vw;
+  }
+
+  .navbarHead.responsive #leftNav {
+    width: 100vw;
+    display: block;
+  }
+
+  .navbarHead.responsive #leftNav a {
+    margin-top: 0.25em;
+    display: block;
+  }
+
+  .navbarHead.responsive #rightNav {
+    width: 100vw;
+    display: block;
+  }
+
+  .navbarHead.responsive #rightNav a {
+    margin-top: 0.25em;
+    display: block;
+  }
+
+  .information {
+    width: 35%;
+  }
+
+  .information img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 850px) {
+  .information {
+    width: 100%;
+  }
+  .information {
+    padding: 2em 5em 2em 2em;
+  }
+  .contact .clocation {
+    display: block;
+  }
+
+  .information img {
+    width: 500px;
+  }
+  .map {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .home {
+    padding: 5em 2em 5em;
+  }
+  p {
+    padding: 0;
+  }
+  .home {
+    background-color: black;
+    display: block;
+  }
+
+  .home .introduction h1 {
+    font-size: 18vw;
+  }
+  .home .introduction {
+    width: 100%;
+  }
+
+  .home .introduction a {
+    display: none;
+  }
+
+  #imgbtn {
+    width: fit-content;
+    display: block;
+  }
+
+  .orderBtn {
+    font-size: 2em;
+    margin: 0 auto;
+  }
+  .home .img {
+    width: 100%;
+  }
+
+  .about .goodpoint {
+    display: block;
+  }
+
+  .about .goodpoint .card {
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 100%;
+    padding: 2em 0 2em 0;
+    display: block;
+  }
+
+  .reviewCar {
+    padding: 0;
+  }
+
+  .reviewCar .content {
+    width: 80%;
+  }
+
+  .reviewCar .image {
+    display: none;
+  }
+}
