@@ -490,6 +490,7 @@ span {
 
   .reviewCar .content {
     width: 80%;
+    margin-left: 2em;
   }
 
   .reviewCar .image {
