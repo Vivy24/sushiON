@@ -48,13 +48,13 @@ h3 {
 }
 
 .navbarHead div a {
-  color: black;
+  color: white;
   margin: 0 2em 0 2em;
   text-decoration: none;
 }
 
 .navbarHead div a:hover {
-  color: white;
+  color: black;
 }
 
 .navbarHead .icon {
