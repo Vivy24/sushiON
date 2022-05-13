@@ -4,24 +4,45 @@
 
 # Showcase:
 
-## On Desktop
+### Landing Section
 
+#### Desktop
 ![landingOnDesktop](sushi/desktop.png)
 
-![reviewOnDesktop](sushi/aboutd.png)
-
-![menuOnDesktop](sushi/menu.png)
-
-![locationOnDesktop](sushi/contact.png)
-
-## On Phone
-
+#### Phone
 ![landingOnPhone](sushi/phone.png)
 
 ![aboutOnPhone](sushi/aboutp.png)
 
+### Review Section
+
+#### Desktop
+![reviewOnDesktop](sushi/aboutd.png)
+
+#### Phone
 ![reviewOnPhone](sushi/reviewp.png)
 
+### Review Section
+
+#### Desktop
+![reviewOnDesktop](sushi/aboutd.png)
+
+#### Phone
+![reviewOnPhone](sushi/reviewp.png)
+
+### Menu Section
+
+#### Desktop
+![menuOnDesktop](sushi/menu.png)
+
+#### Phone
 ![menuOnPhone](sushi/suship.png)
 
+### Location Section
+
+#### Desktop
+![locationOnDesktop](sushi/contact.png)
+
+#### Phone
 ![locationOnPhone](sushi/location.png)
+
