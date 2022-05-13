@@ -17,18 +17,12 @@
 ### Review Section
 
 #### Desktop
+
 ![reviewOnDesktop](sushi/aboutd.png)
 
 #### Phone
 ![reviewOnPhone](sushi/reviewp.png)
 
-### Review Section
-
-#### Desktop
-![reviewOnDesktop](sushi/aboutd.png)
-
-#### Phone
-![reviewOnPhone](sushi/reviewp.png)
 
 ### Menu Section
 
